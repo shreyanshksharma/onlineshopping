@@ -107,7 +107,7 @@ $(function() {
 
 								}
 							},
-							{
+						{
 								data : 'id',
 								bSortable : false,
 								mRender : function(data, type, row) {
@@ -118,9 +118,10 @@ $(function() {
 											+ '/show/'
 											+ data
 											+ '/product" class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span></a> &#160;';
+									str += '<a href="javascript:void(0)" class="btn btn-success disabled"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
 
 									
-									if(userRole !== 'ADMIN') {
+	/*								if(userRole !== 'ADMIN') {
 										if (row.quantity < 1) {
 											str += '<a href="javascript:void(0)" class="btn btn-success disabled"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
 										} else {
@@ -138,7 +139,7 @@ $(function() {
 											+ '/manage/'
 											+ data
 											+ '/product" class="btn btn-warning"><span class="glyphicon glyphicon-pencil"></span></a>';
-									}
+									}*/
 									
 									return str;
 
